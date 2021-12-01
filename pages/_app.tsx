@@ -37,7 +37,7 @@ const theme: VechaiTheme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <VechaiProvider theme={theme} colorScheme="bee">
+      <VechaiProvider theme={theme} colorScheme="bee" density="comfortable">
         <Component {...pageProps} />
       </VechaiProvider>
     </>
