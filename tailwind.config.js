@@ -29,5 +29,6 @@ module.exports = {
     require("@vechaiui/core"),
     require("tailwindcss"),
     require("autoprefixer"),
+    require("@tailwindcss/aspect-ratio"),
   ],
 };
