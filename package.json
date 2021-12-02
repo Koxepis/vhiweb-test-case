@@ -38,8 +38,5 @@
   "main": "next.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "optionalDependencies": {
-    "formik": "^2.2.9"
-  }
+  "license": "ISC"
 }
