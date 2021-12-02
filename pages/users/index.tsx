@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import {
   CheckCircleIcon,
@@ -36,11 +37,11 @@ const Users: React.FC<UsersPageProps> = ({ dataUser }: any) => {
       <Layout>
         <ul className="divide-y divide-gray-200">
           {dataUser.map((item: any) => (
-            <li key={item.id}>
-              <a href={"/"} className="block hover:bg-gray-50">
+            <Link href={"/users/" + item.id} key={item.id}>
+              <a className="block hover:bg-gray-100">
                 <div className="flex items-center px-4 py-4 sm:px-6">
                   <div className="min-w-0 flex-1 flex items-center">
-                    <div className="flex-shrink-0 relative h-12 w-12">
+                    <div className="flex-shrink-0 relative h-12 w-12 hover:scale-110">
                       <Image
                         className="rounded-full"
                         src={item.avatar}
@@ -69,8 +70,8 @@ const Users: React.FC<UsersPageProps> = ({ dataUser }: any) => {
                         <div>
                           <p className="text-sm text-gray-900">
                             Registered on{" "}
-                            <time dateTime={"2020-01-07"}>
-                              {"January 7, 2020"}
+                            <time dateTime={"2022-01-07"}>
+                              {"January 7, 2022"}
                             </time>
                           </p>
 
@@ -94,7 +95,7 @@ const Users: React.FC<UsersPageProps> = ({ dataUser }: any) => {
                   </div>
                 </div>
               </a>
-            </li>
+            </Link>
           ))}
         </ul>
       </Layout>
