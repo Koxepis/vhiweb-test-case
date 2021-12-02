@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
@@ -9,17 +10,30 @@ module.exports = {
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      black: colors.black,
-      white: colors.white,
-      gray: colors.trueGray,
-      indigo: colors.indigo,
-      red: colors.rose,
-      yellow: colors.amber,
+    extends: {
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        black: colors.black,
+        white: colors.white,
+        gray: colors.trueGray,
+        indigo: colors.indigo,
+        red: colors.rose,
+        yellow: colors.amber,
+        moon: {
+          50: "#F8F9FC",
+          100: "#EBEDF5",
+          200: "#CFD4E7",
+          300: "#A7AFD3",
+          400: "#7E8BBE",
+          500: "#4D5C99",
+          600: "#3C4777",
+          700: "#2B3355",
+          800: "#131726",
+          900: "#0C0E17",
+        },
+      },
     },
-    extend: {},
   },
   variants: {
     extend: {},
