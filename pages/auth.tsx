@@ -20,8 +20,8 @@ const Auth: React.FC = () => {
   };
 
   return (
-    <div className="bg-white border rounded-lg p-12 w-4/12 mx-auto my-48">
-      <h3 className="font-extrabold text-3xl">Ahoy!</h3>
+    <div className="bg-white border rounded-lg p-6 sm:p-12 w-4/5 sm:w-4/12 mx-auto my-48">
+      <h3 className="font-extrabold text-3xl">Welcome</h3>
 
       <p className="text-gray-500 text-sm mt-4">
         {`Fill in your email, we'll send you a magic link.`}
@@ -31,15 +31,15 @@ const Auth: React.FC = () => {
         <input
           type="email"
           placeholder="Your email address"
-          className="border w-full p-3 rounded-lg mt-4 focus:border-indigo-500"
+          className="border w-full sm:p-3 rounded-lg mt-2 sm:mt-4 focus:border-primary-500"
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <button
           type="submit"
-          className="bg-indigo-500 text-white w-full p-3 rounded-lg mt-8 hover:bg-indigo-700"
+          className="bg-primary-500 text-white w-full p-3 rounded-lg mt-2 sm:mt-8 hover:bg-primary-700"
         >
-          {` Let's go!`}
+          Submit
         </button>
       </form>
     </div>
