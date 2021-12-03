@@ -1,22 +1,13 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Home: NextPage = () => {
-  const router = useRouter();
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    router.push("/users");
-  };
-
   return (
     <>
       <div className="flex items-center justify-center  min-h-[50vh] sm:min-h-screen">
-        <button
-          onClick={handleSubmit}
-          className="bg-primary-500 p-1.5 px-3 rounded-md border border-neutral-600"
-        >
-          submit
-        </button>
+        <Link href={"/auth"}>
+          <a className="hover:underline">click here to login</a>
+        </Link>
       </div>
     </>
   );
