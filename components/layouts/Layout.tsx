@@ -7,7 +7,7 @@ interface Props {
 
 export const Layout = (props: Props) => {
   return (
-    <div className="flex flex-col sm:justify-center sm:items-center min-h-screen">
+    <div className="flex flex-col sm:items-center min-h-screen">
       <div className="bg-white shadow overflow-hidden min-w-full sm:min-w-[85%] sm:rounded-md">
         <Navbar />
         {props.children}
